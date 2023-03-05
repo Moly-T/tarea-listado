@@ -14,4 +14,5 @@ use App\Http\Controllers\ProductsController;
 */
 
 Route::get('/',[ProductsController::class, 'index'])->name('Listado');  
+Route::post('/',[ProductsController::class,'store'])->name('Listado.guardar');
 
