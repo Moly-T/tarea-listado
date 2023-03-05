@@ -97,11 +97,14 @@
     <label for="amount">Cantidad</label>
     <input type="number" class="form-control" id="amount" name="amount" min="1" required>
   </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
-</form>
+  <div class="form-group">
+    <label for="name">Link de Imagen</label>
+    <input type="text" class="form-control" id="image" name="image" required>
+  </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Send message</button>
+      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
       </div>
     </div>
   </div>
