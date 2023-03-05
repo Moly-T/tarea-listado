@@ -37,8 +37,7 @@
   <h1>Productos</h1>
   <table class="table table-bordered table-striped">
     <thead>
-      <tr>
-        
+      <tr>       
         <th colspan="2">Nombre de producto</th>
         <th>Descripción de Producto</th>
         <th>Precio</th>
@@ -59,11 +58,53 @@
           <button type="button" class="btn btn-danger">Eliminar</button>
         </td>
       </tr>    
-    
     </tbody>
     @endforeach
   </table>
-  <button type="button" class="btn btn-secondary">Añadir</button>
+ </div>
+
+ <!--Modal Button-->
+<button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Añadir</button>
+
+<!--Modal-->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Añadir Producto</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      <form>
+  <div class="form-group">
+    <label for="name">Nombre</label>
+    <input type="text" class="form-control" id="name" name="name" required>
+  </div>
+  <div class="form-group">
+    <label for="description">Descripción</label>
+    <textarea class="form-control" id="description" name="description" rows="3" required></textarea>
+  </div>
+  <div class="form-group">
+    <label for="price">Precio</label>
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <span class="input-group-text">$</span>
+      </div>
+      <input type="number" class="form-control" id="price" name="price" min="0" step="0.01" required>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="amount">Cantidad</label>
+    <input type="number" class="form-control" id="amount" name="amount" min="1" required>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Send message</button>
+      </div>
+    </div>
+  </div>
 </div>
 
       
