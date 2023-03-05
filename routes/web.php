@@ -14,6 +14,6 @@ use App\Http\Controllers\ProductsController;
 */
 
 Route::get('/', function () {
-    return view('Products');    
-})->name('Productos');  
+    return view('List');    
+})->name('Listado');  
 
