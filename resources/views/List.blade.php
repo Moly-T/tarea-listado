@@ -54,13 +54,14 @@
         <td>{{$product->description}}</td>
         <td>{{$product->price}}</td>
         <td>{{$product->amount}}</td>
-        
-          <button type="button" class="btn btn-primary">Editar</button>
+        <td>
+        <button type="button" class="btn btn-primary">Editar</button>
           <button type="button" class="btn btn-danger">Eliminar</button>
         </td>
       </tr>    
-    @endforeach
+    
     </tbody>
+    @endforeach
   </table>
   <button type="button" class="btn btn-secondary">Añadir</button>
 </div>
