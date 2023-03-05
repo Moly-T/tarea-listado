@@ -54,8 +54,12 @@
         <td>{{$product->price}}</td>
         <td>{{$product->amount}}</td>
         <td>
-        <button type="button" class="btn btn-primary">Editar</button>
-          <button type="button" class="btn btn-danger">Eliminar</button>
+          <form action="{{ route('productos.destroy', $product->id) }}" method="post">
+            @csrf 
+            @method('delete')
+            <a type="button" class="btn btn-primary">Editar</a>
+            <button type="submit" class="btn btn-danger">Eliminar</button>
+          </form>
         </td>
       </tr>    
     </tbody>
@@ -77,6 +81,7 @@
       <div class="modal-body">
       <form action="{{ route('Listado.guardar')}}" method="POST">
         @csrf
+        @method('delete')
   <div class="form-group">
     <label for="name">Nombre</label>
     <input type="text" class="form-control" id="name" name="name" required>
