@@ -47,17 +47,19 @@
       </tr>
     </thead>
     <tbody>
+    
       <tr>
-        <td>imagen</td>
-        <td>Pc gamer de super alta gama </td>
-        <td>Description of product 1</td>
-        <td>$10.99</td>
-        <td>50</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
         <td>
           <button type="button" class="btn btn-primary">Editar</button>
           <button type="button" class="btn btn-danger">Eliminar</button>
         </td>
       </tr>    
+    
     </tbody>
   </table>
   <button type="button" class="btn btn-secondary">Añadir</button>

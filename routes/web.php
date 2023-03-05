@@ -13,7 +13,5 @@ use App\Http\Controllers\ProductsController;
 |
 */
 
-Route::get('/', function () {
-    return view('List');    
-})->name('Listado');  
+Route::get('/',[ProductsController::class, 'index'])->name('Listado');  
 
