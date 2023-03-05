@@ -47,19 +47,19 @@
       </tr>
     </thead>
     <tbody>
-    
+    @foreach ($products as $product)
       <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td>
+        <td><img src="{{$product->image}} " class="product-img"></td>
+        <td>{{$product->name}}</td>
+        <td>{{$product->description}}</td>
+        <td>{{$product->price}}</td>
+        <td>{{$product->amount}}</td>
+        
           <button type="button" class="btn btn-primary">Editar</button>
           <button type="button" class="btn btn-danger">Eliminar</button>
         </td>
       </tr>    
-    
+    @endforeach
     </tbody>
   </table>
   <button type="button" class="btn btn-secondary">Añadir</button>
